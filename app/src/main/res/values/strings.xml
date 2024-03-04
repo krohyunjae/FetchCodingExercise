@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">FetchCodingExercise</string>
 
+
+    <string name="all">All</string>
     <string name="id">ID</string>
     <string name="list_id">List ID</string>
     <string name="name">Name</string>
     <string name="list_num">List %d</string>
 
+
     <string name="error_no_internet">No connections are available. Please check your internet.</string>
     <string name="error_unexpected">Unexpected error has occurred. Please try again later.</string>
+
 </resources>
