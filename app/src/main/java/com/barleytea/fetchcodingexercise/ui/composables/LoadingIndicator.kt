@@ -43,8 +43,8 @@ private const val AnimationDelayMillis = AnimationDurationMillis / NumIndicators
 
 @Composable
 fun BoxScope.LoadingIndicator(
+    modifier: Modifier = Modifier,
     animating: Boolean = true,
-    modifier: Modifier = Modifier.align(Alignment.Center),
     color: Color = MaterialTheme.colorScheme.surfaceVariant,
     indicatorSpacing: Dp = basePadding/2,
     // 1
@@ -70,7 +70,7 @@ fun BoxScope.LoadingIndicator(
         }
         animatedValue
     }
-    Row(modifier = modifier, verticalAlignment = Alignment.CenterVertically) {
+    Row(modifier = modifier.align(Alignment.Center), verticalAlignment = Alignment.CenterVertically) {
         animatedValues.forEach { animatedValue ->
             LoadingDot(
                 modifier = Modifier

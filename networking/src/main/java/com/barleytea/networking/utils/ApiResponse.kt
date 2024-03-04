@@ -3,12 +3,9 @@ package com.barleytea.networking.utils
 import com.squareup.moshi.JsonDataException
 import com.squareup.moshi.JsonEncodingException
 import com.squareup.moshi.Moshi
-import io.reactivex.Single
 import kotlinx.serialization.SerializationException
 import okhttp3.ResponseBody
 import retrofit2.Response
-import retrofit2.adapter.rxjava2.Result
-import timber.log.Timber
 import java.io.IOException
 
 class ApiParseException(cause: Throwable) : RuntimeException(cause)

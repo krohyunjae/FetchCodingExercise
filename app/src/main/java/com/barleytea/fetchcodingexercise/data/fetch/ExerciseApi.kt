@@ -13,6 +13,10 @@ interface ExerciseApi {
         val id: String,
         val listId: Int,
         val name: String?
-    )
+    ) {
+        override fun toString(): String {
+            return listId.toString()
+        }
+    }
 }
 
