@@ -13,8 +13,7 @@ import timber.log.Timber
 
 @HiltAndroidApp
 class App : Application(), Configuration.Provider{
-//    @Inject lateinit var exerciseRepository: ExerciseRepository
-//
+
     @EntryPoint
     @InstallIn(SingletonComponent::class)
     interface HiltWorkerFactoryEntryPoint {
